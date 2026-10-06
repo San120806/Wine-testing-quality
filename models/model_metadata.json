@@ -1,0 +1,201 @@
+{
+  "model_name": "Random Forest Classifier",
+  "parameters": {
+    "n_estimators": 300,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "target_classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "class_mapping": "Low: quality <= 5, Medium: quality == 6, High: quality >= 7",
+  "metrics": {
+    "accuracy": 0.6029,
+    "precision_macro": 0.5891,
+    "recall_macro": 0.5912,
+    "f1_macro": 0.5899,
+    "f1_weighted": 0.6045,
+    "cv_f1_macro_mean": 0.606,
+    "cv_f1_macro_std": 0.0432,
+    "per_class_f1": {
+      "Low": 0.68,
+      "Medium": 0.5297,
+      "High": 0.56
+    }
+  },
+  "feature_names": [
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
+  ],
+  "feature_importances": {
+    "alcohol": 0.17851817620908375,
+    "sulphates": 0.12443387730541675,
+    "volatile acidity": 0.10406109161163754,
+    "density": 0.08879758396873405,
+    "total sulfur dioxide": 0.08774173901355863,
+    "citric acid": 0.08173746282197958,
+    "chlorides": 0.07366648166205292,
+    "fixed acidity": 0.07053799680352878,
+    "pH": 0.06900171758590207,
+    "free sulfur dioxide": 0.06236574071971195,
+    "residual sugar": 0.05913813229839396
+  },
+  "outlier_bounds": {
+    "fixed acidity": [
+      3.95,
+      12.349999999999998
+    ],
+    "volatile acidity": [
+      0.021250000000000047,
+      1.01125
+    ],
+    "citric acid": [
+      -0.42000000000000004,
+      0.94
+    ],
+    "residual sugar": [
+      0.8499999999999996,
+      3.6500000000000004
+    ],
+    "chlorides": [
+      0.03850000000000002,
+      0.12249999999999998
+    ],
+    "free sulfur dioxide": [
+      -14.0,
+      42.0
+    ],
+    "total sulfur dioxide": [
+      -39.5,
+      124.5
+    ],
+    "density": [
+      0.9921875,
+      1.0012875
+    ],
+    "pH": [
+      2.925,
+      3.6849999999999996
+    ],
+    "sulphates": [
+      0.28000000000000014,
+      0.9999999999999999
+    ],
+    "alcohol": [
+      6.950000000000001,
+      13.749999999999998
+    ]
+  },
+  "feature_stats": {
+    "fixed acidity": {
+      "min": 4.6,
+      "max": 15.9,
+      "mean": 8.310596026490067,
+      "median": 7.9,
+      "std": 1.7369898075324683,
+      "q25": 7.1,
+      "q75": 9.2
+    },
+    "volatile acidity": {
+      "min": 0.12,
+      "max": 1.58,
+      "mean": 0.5294775570272259,
+      "median": 0.52,
+      "std": 0.1830313176190719,
+      "q25": 0.39,
+      "q75": 0.64
+    },
+    "citric acid": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2723325974981604,
+      "median": 0.26,
+      "std": 0.1955365445504638,
+      "q25": 0.09,
+      "q75": 0.43
+    },
+    "residual sugar": {
+      "min": 0.9,
+      "max": 15.5,
+      "mean": 2.5233995584988964,
+      "median": 2.2,
+      "std": 1.3523137577104225,
+      "q25": 1.9,
+      "q75": 2.6
+    },
+    "chlorides": {
+      "min": 0.012,
+      "max": 0.611,
+      "mean": 0.08812362030905077,
+      "median": 0.079,
+      "std": 0.04937686244348607,
+      "q25": 0.07,
+      "q75": 0.091
+    },
+    "free sulfur dioxide": {
+      "min": 1.0,
+      "max": 72.0,
+      "mean": 15.893303899926417,
+      "median": 14.0,
+      "std": 10.447270259048693,
+      "q25": 7.0,
+      "q75": 21.0
+    },
+    "total sulfur dioxide": {
+      "min": 6.0,
+      "max": 289.0,
+      "mean": 46.82597498160412,
+      "median": 38.0,
+      "std": 33.40894570661652,
+      "q25": 22.0,
+      "q75": 63.0
+    },
+    "density": {
+      "min": 0.99007,
+      "max": 1.00369,
+      "mean": 0.9967089477557026,
+      "median": 0.9967,
+      "std": 0.0018689171325591413,
+      "q25": 0.9956,
+      "q75": 0.99782
+    },
+    "pH": {
+      "min": 2.74,
+      "max": 4.01,
+      "mean": 3.309786607799853,
+      "median": 3.31,
+      "std": 0.15503631128729617,
+      "q25": 3.21,
+      "q75": 3.4
+    },
+    "sulphates": {
+      "min": 0.33,
+      "max": 2.0,
+      "mean": 0.6587049300956587,
+      "median": 0.62,
+      "std": 0.17066689057420686,
+      "q25": 0.55,
+      "q75": 0.73
+    },
+    "alcohol": {
+      "min": 8.4,
+      "max": 14.9,
+      "mean": 10.432315428010792,
+      "median": 10.2,
+      "std": 1.0820654499402542,
+      "q25": 9.5,
+      "q75": 11.1
+    }
+  }
+}

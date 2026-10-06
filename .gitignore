@@ -1,0 +1,18 @@
+# Python Virtual Environments
+.venv/
+venv/
+env/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Redundant duplicate models in notebooks/ directory (models are stored in models/)
+notebooks/models/
+
+# macOS metadata
+.DS_Store
